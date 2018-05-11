@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Detalles</h1>
+    {% for detalle in object_list %}
+        <p>{{ detalle.id }}</p>
+        <p>{{ detalle.producto_FK.descripcionProd }}</p>
+        <p>{{ detalle.producto_FK.precio }}</p>
+    {% endfor %}
+</body>
+</html>
